@@ -1,0 +1,22 @@
+
+name: tailscale
+type: sw.application
+description: >-
+  Deploy Tailscale to a Raspberry Pi 4 in Balena
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/philletourneau/tailscale-balena-rpi4'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/philletourneau/tailscale-balena-rpi4/main/logo.png
+data:
+  applicationEnvironmentVariables:
+    - TAILSCALE_KEY: 0
+  defaultDeviceType: raspberry-pi
+  supportedDeviceTypes:
+    - raspberrypi4-64
+version: 1.0.0
